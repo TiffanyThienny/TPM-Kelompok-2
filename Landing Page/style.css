@@ -230,9 +230,9 @@ section{
     width: var(--width);
     height: var(--height);
     position: absolute;
-    left:60%;
-    animation: autoRun 5s linear infinite; 
-    animation-delay: calc(5s / var(--quantity) * (var(--position) - 1));
+    left:55%;
+    animation: autoRun 7s linear infinite; 
+    animation-delay: calc(7s / var(--quantity) * (var(--position) - 1));
 }
 
 
