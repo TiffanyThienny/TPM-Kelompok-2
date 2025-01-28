@@ -53,7 +53,7 @@
 }
 
 .leader-info{
-    margin-top:78px;
+    margin-top:60px;
 }
 
 .leader-info >h1{
@@ -84,7 +84,7 @@
 }
 
 .leader-wrapper{
-    margin-top:47px;
+    margin-top:20px;
     display: flex;
     justify-content:center;
     align-items:center;
@@ -97,27 +97,44 @@
     height: 50px;
     border-radius: 10px;
     background-color: #CEE6FF;
-    color:black;
     padding:10px;
 }
 
+.leader-input-text{
+    font-weight: 500;
+    font-size: 20px;
+}
+
 .cv-id-wrapper{
-    gap:10px;
+    gap:100px;
     display: flex;
     flex-direction: row;
     position: absolute;
-    top:1100px;
+    top:1040px;
     left:170px;
 }
 
 .flazz-wrapper{
     position: absolute;
-    top:1230px;
+    top:1180px;
     left:170px;  
 }
 
 .leader-input-file{
-    color:transparent;
+    width:200px;
+    height:50px;
+    background-color: #CEE6FF;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.leader-input-file-link{
+    color:#00000080;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 600;
 }
 
 .requirement-text{
