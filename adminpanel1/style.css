@@ -99,6 +99,8 @@ a.sidebar-link {
     font-size: 0.9rem;
     white-space: nowrap;
     border-left: 3px solid transparent;
+    display: flex;
+    gap:25px;
 }
 
 .sidebar-link i {
@@ -171,8 +173,7 @@ a.sidebar-link:hover {
     align-items:center;
     width:100px;
     background-color: #284AA6;
-    height:56px;
-    color:white;
+    height:57px;
     border-radius: 10px;
 }
 

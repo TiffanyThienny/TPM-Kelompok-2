@@ -27,7 +27,7 @@
                     <button class="toggle-btn btn d-flex" style="background-color: #284AA6"type="button">
                         <img src="assets/general.png">
                         <div class="sidebar-logo">
-                            <a href="#" class="general">General</a>
+                            <a href="#" class="general" style="color:white;">General</a>
                         </div>
                     </button>
                 </li>
@@ -109,7 +109,7 @@
         </div>
         <div class="activity">
             <div class="count-wrapper">
-                <h1 class="count">7</h1>
+                <h1 class="count" id="teamcount">7</h1>
                 <p class="detail">Teams</p>
             </div>
             <img src="assets/line.png">
@@ -129,7 +129,7 @@
         <table class="table">
             <thead>
               <tr>
-                <th scope="col"><input type="checkbox"></th>
+                <th onclick="checkAll();" scope="col"><input type="checkbox" id="masterCheckbox"></th>
                 <th scope="col">User</th>
                 <th scope="col">Status</th>
                 <th scope="col">Phone Number</th>
@@ -139,8 +139,8 @@
               </tr>
             </thead>
             <tbody>
-              <tr>
-                <th scope="row"><input type="checkbox"></th>
+              <tr class="rowcounter">
+                <th scope="row" class="checkboxchild"><input type="checkbox"></th>
                 <td><a href="" class="user-anchor"><img src="assets/profile2.png" style="width:30"> TIM KOMPAK YA</a></td>
                 <td>Active</td>
                 <td>+08956868869</td>
@@ -148,8 +148,8 @@
                 <td>2 days ago</td>
                 <td><a href=""><img src="assets/option2.png"></a></td>
               </tr>
-              <tr>
-                <th scope="row"><input type="checkbox"></th>
+              <tr class="rowcounter">
+                <th scope="row" class="checkboxchild"><input type="checkbox"></th>
                 <td><a href="" class="user-anchor"><img src="assets/profile2.png" style="width:30"> TIM KOMPAK YA</a></td>
                 <td>Active</td>
                 <td>+08956868869</td>
@@ -157,8 +157,8 @@
                 <td>2 days ago</td>
                 <td><a href=""><img src="assets/option2.png"></a></td>
               </tr>
-              <tr>
-                <th scope="row"><input type="checkbox"></th>
+              <tr class="rowcounter">
+                <th scope="row" class="checkboxchild"><input type="checkbox"></th>
                 <td><a href="" class="user-anchor"><img src="assets/profile2.png" style="width:30"> TIM KOMPAK YA</a></td>
                 <td>Active</td>
                 <td>+08956868869</td>
@@ -166,8 +166,8 @@
                 <td>2 days ago</td>
                 <td><a href=""><img src="assets/option2.png"></a></td>
               </tr>
-              <tr>
-                <th scope="row"><input type="checkbox"></th>
+              <tr class="rowcounter">
+                <th scope="row" class="checkboxchild"><input type="checkbox"></th>
                 <td><a href="" class="user-anchor"><img src="assets/profile2.png" style="width:30"> TIM KOMPAK YA</a></td>
                 <td>Active</td>
                 <td>+08956868869</td>
@@ -175,8 +175,8 @@
                 <td>2 days ago</td>
                 <td><a href=""><img src="assets/option2.png"></a></td>
               </tr>
-              <tr>
-                <th scope="row"><input type="checkbox"></th>
+              <tr class="rowcounter">
+                <th scope="row" class="checkboxchild"><input type="checkbox"></th>
                 <td><a href="" class="user-anchor"><img src="assets/profile2.png" style="width:30"> TIM KOMPAK YA</a></td>
                 <td>Active</td>
                 <td>+08956868869</td>
@@ -184,17 +184,8 @@
                 <td>2 days ago</td>
                 <td><a href=""><img src="assets/option2.png"></a></td>
               </tr>
-              <tr>
-                <th scope="row"><input type="checkbox"></th>
-                <td><a href="" class="user-anchor"><img src="assets/profile2.png" style="width:30"> TIM KOMPAK YA</a></td>
-                <td>Active</td>
-                <td>+08956868869</td>
-                <td>Kompak ya</td>
-                <td>2 days ago</td>
-                <td><a href=""><img src="assets/option2.png"></a></td>
-              </tr>
-              <tr>
-                <th scope="row"><input type="checkbox"></th>
+                            <tr class="rowcounter">
+                <th scope="row" class="checkboxchild"><input type="checkbox"></th>
                 <td><a href="" class="user-anchor"><img src="assets/profile2.png" style="width:30"> TIM KOMPAK YA</a></td>
                 <td>Active</td>
                 <td>+08956868869</td>

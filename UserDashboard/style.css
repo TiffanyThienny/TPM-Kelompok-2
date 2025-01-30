@@ -48,8 +48,22 @@
     height:1350px;
     background-image: linear-gradient(to bottom, #E0F2FF80, #92869980);
     border-radius: 50px;
-    border-image: linear-gradient(to bottom, #9DEAFF, #E6CCFF);
-    border-width: 10px;
+    z-index: 0;
+
+
+    
+}
+
+.leader-form::before{
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: 50px;
+    border: 8px solid transparent;
+    background: linear-gradient(140deg, #9DEAFF, #B4A8FB) border-box;
+    mask: linear-gradient(#fff 0 0) padding-box, linear-gradient(#fff 0 0);
+    mask-composite: exclude;
+
 }
 
 .leader-info{
@@ -268,12 +282,14 @@
     color: white;
     top:330px;
     left:500px;
+
 }
 
 .time-line-card-text{
     font-family: "Aclonica";
     font-size: 30px;
     color: white;
+    
 }
 
 .roket3{
