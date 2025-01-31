@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="form-container">
+      <form id="registrationForm" onsubmit="return validateForm(event)">
+        <div class="input-group">
+          <label for="fullName">Full name</label>
+          <input
+            type="text"
+            id="fullName"
+            name="fullName"
+            placeholder="Your full name"
+            required
+          />
+        </div>
+
+        <div class="input-group">
+          <label for="email">E-mail</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Your e-mail"
+            required
+          />
+        </div>
+
+        <div class="input-group">
+          <label for="whatsapp">Whatsapp number</label>
+          <input
+            type="tel"
+            id="whatsapp"
+            name="whatsapp"
+            placeholder="Your number"
+            required
+          />
+        </div>
+
+        <div class="input-group">
+          <label for="lineId">Line ID</label>
+          <input
+            type="text"
+            id="lineId"
+            name="lineId"
+            placeholder="Your line ID"
+            required
+          />
+        </div>
+
+        <div class="input-group">
+          <label for="githubId">Github/ Gitlab ID</label>
+          <input
+            type="text"
+            id="githubId"
+            name="githubId"
+            placeholder="Your Github ID"
+            required
+          />
+        </div>
+
+        <div class="input-group">
+          <label for="birthPlace">Birth place</label>
+          <input
+            type="text"
+            id="birthPlace"
+            name="birthPlace"
+            placeholder="Your birth place"
+            required
+          />
+        </div>
+
+        <div class="input-group">
+          <label for="birthDate">Birth date</label>
+          <select id="birthDate" name="birthDate" required>
+            <option value="" disabled selected>Select your birth date</option>
+          </select>
+        </div>
+
+        <div class="upload-group">
+          <label for="cv">Upload CV</label>
+          <button
+            type="button"
+            class="upload-btn"
+            onclick="document.getElementById('cv').click()"
+          >
+            <img src="assets/upload.png" alt="Upload icon" />
+            Upload here
+          </button>
+          <input
+            type="file"
+            id="cv"
+            name="cv"
+            accept=".pdf,.jpg,.jpeg,.png"
+            hidden
+          />
+          <span class="file-info">File formats: pdf, jpg, jpeg and png</span>
+        </div>
+
+        <div class="upload-container">
+          <div class="upload-group">
+            <label for="flazzCard">Upload Flazz card</label>
+            <button
+              type="button"
+              class="upload-btn"
+              onclick="document.getElementById('flazzCard').click()"
+            >
+              <img src="assets/upload.png" alt="Upload icon" />
+              Upload here
+            </button>
+            <input
+              type="file"
+              id="flazzCard"
+              name="flazzCard"
+              accept=".pdf,.jpg,.jpeg,.png"
+              hidden
+            />
+            <span class="file-info">File formats: pdf, jpg, jpeg and png</span>
+          </div>
+
+          <div class="upload-group">
+            <label for="idCard">Upload ID Card</label>
+            <button
+              type="button"
+              class="upload-btn"
+              onclick="document.getElementById('idCard').click()"
+            >
+              <img src="assets/upload.png" alt="Upload icon" />
+              Upload here
+            </button>
+            <input
+              type="file"
+              id="idCard"
+              name="idCard"
+              accept=".pdf,.jpg,.jpeg,.png"
+              hidden
+            />
+            <span class="file-info">File formats: pdf, jpg, jpeg and png</span>
+          </div>
+        </div>
+
+        <button type="submit" class="next-btn">Next ></button>
+      </form>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
