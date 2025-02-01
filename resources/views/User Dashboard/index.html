@@ -1,0 +1,516 @@
+@import url('https://fonts.googleapis.com/css2?family=Aclonica&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: "Poppins";
+    
+}
+
+.form-inline{
+    background-image: linear-gradient(to right, #8502B4, #124162);
+    border-radius: 20px;
+    width: 137px;
+    height: 42px;
+}
+
+.winner-team {
+    border-radius: 10px;
+    color:white;
+    width: 137px;
+    height: 42px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 16px;
+    text-align: center;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s ease;
+}
+
+.content{
+    background-image: linear-gradient(to bottom, #21449E, #6F41A0);
+    height:500vh;
+    align-items: center;
+}
+
+.leader-form{
+    position: absolute;
+    left:20%;
+    top:192px;
+    display: flex;
+    justify-content: center;
+    width: 930px;
+    height:1350px;
+    background-image: linear-gradient(to bottom, #E0F2FF80, #92869980);
+    border-radius: 50px;
+    z-index: 0;
+
+
+    
+}
+
+.leader-form::before{
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: 50px;
+    border: 8px solid transparent;
+    background: linear-gradient(140deg, #9DEAFF, #B4A8FB) border-box;
+    mask: linear-gradient(#fff 0 0) padding-box, linear-gradient(#fff 0 0);
+    mask-composite: exclude;
+
+}
+
+.leader-info{
+    margin-top:60px;
+}
+
+.leader-info >h1{
+    display: flex;
+    justify-content:center;
+    align-items:center;
+
+}
+
+.leader-title-informasi{
+    font-family: "Aclonica";
+    font-size: 45px;
+    text-align: center;
+    color: white;
+}
+
+.leader-title-leader{
+    font-family: "Aclonica";
+    font-size: 90px;
+    color: white;
+    text-align: center;
+}
+
+.leader-text{
+    font-size: 30px;
+    font-family: "Aclonica";
+    color: white;
+}
+
+.leader-wrapper{
+    margin-top:20px;
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction:column;
+    gap: 40px;
+}
+
+.leader-input{
+    width: 590px;
+    height: 50px;
+    border-radius: 10px;
+    background-color: #CEE6FF;
+    padding:10px;
+}
+
+.leader-input-text{
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.cv-id-wrapper{
+    gap:100px;
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    top:1040px;
+    left:170px;
+}
+
+.flazz-wrapper{
+    position: absolute;
+    top:1180px;
+    left:170px;  
+}
+
+.leader-input-file{
+    width:200px;
+    height:50px;
+    background-color: #CEE6FF;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.leader-input-file-link{
+    color:#00000080;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.requirement-text{
+    color:white;
+    font-size: 10px;
+}
+
+.planet1{
+    position: absolute;
+    right:0px;
+}
+
+.planet2{
+    position: absolute;
+    left:0px;
+    top:1050px;
+}
+
+.bgbintang1{
+    width:100%;
+}
+
+.bgbintang2{
+    width: 100%;
+}
+
+.roket1{
+    position: absolute;
+    top:200px;
+    left:100px;
+}
+
+.roket2{
+    position: absolute;
+    top:1600px;
+    right:0px;
+}
+
+.astronot1{
+    position: absolute;
+    top:1300px;
+    left:150px;
+    z-index: 2;
+}
+
+.bintang1{
+    width:100%;
+}
+
+.time-line{
+    position: absolute;
+    top:1800px;
+    z-index: 6;
+    left:38%;
+}
+
+.time-line-header{
+    color: white;
+    font-family: "Aclonica";
+    font-size: 80px;
+}
+
+.time-line-img{
+    position: absolute;
+    left:-500px;
+    top:100px;
+}
+
+.time-line-wrapper{
+    position: absolute;
+    top:130px;
+}
+
+.time-line-card-form{
+    background-image: linear-gradient(to right,#A98FE0, #84CDEC);
+    width: 393.53px;
+    height: 83.92px;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.time-line-card-1{
+    position: absolute;
+    left:-320px;
+    top:80px;
+
+}
+
+.time-line-card-2{
+    position: absolute;
+    left:350px;
+    top:80px;
+}
+
+.time-line-card-3{
+    position: absolute;
+    top:350px;
+    left:20px;
+}
+
+.time-line-text-1{
+    position: absolute;
+    font-family: "Aclonica";
+    font-size: 30px;
+    width: 140px;
+    align-items: center;
+    color: white;
+    top:290px;
+    left:-200px;
+}
+
+.time-line-text-2{
+    position: absolute;
+    font-family: "Aclonica";
+    font-size: 30px;
+    width: 140px;
+    align-items: center;
+    color: white;
+    top:150px;
+    left:180px;
+}
+
+.time-line-text-3{
+    position: absolute;
+    font-family: "Aclonica";
+    font-size: 30px;
+    width: 140px;
+    align-items: center;
+    color: white;
+    top:330px;
+    left:500px;
+
+}
+
+.time-line-card-text{
+    font-family: "Aclonica";
+    font-size: 30px;
+    color: white;
+    
+}
+
+.roket3{
+    position: absolute;
+    top:2500px;
+    left:0px;
+}
+
+.astronot2{
+    position: absolute;
+    top:2500px;
+    right:0px;
+}
+
+.planet3{
+    position: absolute;
+    top:2200px;
+    right:0px;
+}
+
+.bgbintang3{
+    position: absolute;
+    top:2200px;
+    width: 100%;
+    left:0px;
+}
+
+.contact-us{
+    position: absolute;
+    top:2900px;
+    left:800px;
+    z-index: 4;
+
+}
+
+.contact-us-header{
+    position: absolute;
+    color: white;
+    font-size: 80px;
+    font-family: "Aclonica";
+    left:-670px;
+}
+
+.contact-submission-wrapper{
+    position: absolute;
+    left:-670px;
+    top:150px;
+    position: absolute;
+    display: flex;
+    gap: 75px;
+}
+
+.left-wrapper >div { 
+    margin-bottom: 50px;
+}
+
+.contact-us-text{
+    font-size:30px;
+    color: white;
+    font-weight: 500;
+    font-family: "Poppins";
+    margin-bottom: 10px;
+}
+
+.left-contact-us-box{
+    border-radius: 20px;
+    background-color: white;
+    opacity: 0.5;
+    width: 610px;
+    height:70px;
+    padding-left: 16px;
+    padding-top: 5px;
+}
+
+.left-contact-us-box::placeholder{
+    font-size: 25px;
+}
+
+.right-contact-us-box{
+    border-radius: 20px;
+    background-color: white;
+    opacity: 0.5;
+    width: 610px;
+    height:245px;
+    padding-left: 16px;
+    padding-top: 5px;
+    font-size: 25px;
+}
+
+.right-contact-us-box::placeholder{
+    position:absolute;
+    left: 16px;
+    top: 5px;
+    font-size: 25px;
+}
+
+.submit-contact-us{
+    position:absolute;
+    right:0px;
+    top:409px;
+    width: 210px;
+    height:70px;
+    border-radius: 20px;
+    font-family: "Aclonica";
+    font-size: 25px;
+    cursor: pointer;
+}
+
+.bgbintang4{
+    width: 100%;
+}
+
+.mountain{
+    width: 100%;
+    position: absolute;
+    top:3300px;
+    left:0px;
+    z-index: 4;
+
+}
+
+.bigmoon{
+    position: absolute;
+    top:3150px;
+    left:100px;
+}
+
+.footer{
+    width: 100%;
+    position: absolute;
+    z-index: 5;
+    top:4255px;
+    display: flex;
+    background-color: black;
+    width: 100%;
+    height: 400px;
+}
+
+.left-footer{
+    display: flex;
+    gap: 53px;
+}
+
+.right-footer{
+    position: absolute;
+    right:80px;
+    bottom:30px;
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+}
+
+.tof-link{
+    color: white;
+    font-size: 30px;
+    font-weight: 600;
+
+}
+
+.powered-by{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.organized-by{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.left-footer-card{
+    width: 228px;
+    height:124px;
+}
+
+.left-footer-card-form{
+    width: 228px;
+    height:124px;
+    background-color: #D9D9D9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.left-footer-card-text{
+    color: white;
+}
+
+.left-footer-text{
+    color: white;
+    font-size: 30px;
+    font-weight: 600;
+}
+
+@media(max-width: 1440px){
+    .content{
+        height:600vh;
+    }
+    .footer{
+        top:4200px;
+    }
+    .bigmoon{
+        width:1000px;
+    }
+    .contact-us{
+        left:700px;
+    }
+}
+
+@media(max-width: 1280px){
+    .content{
+        height:600vh;
+    }
+    .footer{
+        top:4200px;
+    }
+    .bigmoon{
+        width:1000px;
+    }
+    .contact-us{
+        left:700px;
+    }
+}

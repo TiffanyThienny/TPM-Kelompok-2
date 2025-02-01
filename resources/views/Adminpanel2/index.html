@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admin Panel</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <aside id="sidebar" style="width: 80px">
+        <div class="sidebar-header d-flex justify-content-center">
+          <img src="assets/profile.png" alt="Profile" class="profile-picture" />
+        </div>
+        <nav class="sidebar-nav">
+          <ul>
+            <li class="sidebar-item">
+              <button class="toggle-btn btn" style="background-color: #284aa6">
+                <img src="assets/general.png" alt="General" />
+              </button>
+            </li>
+            <li class="sidebar-item">
+              <a href="#" class="sidebar-link">
+                <img src="assets/settings.png" alt="Settings" />
+              </a>
+            </li>
+            <li class="sidebar-item">
+              <a
+                href="#"
+                class="sidebar-link"
+                data-bs-toggle="collapse"
+                data-bs-target="#auth"
+              >
+                <img src="assets/users.png" alt="Users" />
+              </a>
+              <ul id="auth" class="sidebar-dropdown collapse">
+                <li><a href="#" class="sidebar-link">Statistic</a></li>
+                <li><a href="#" class="sidebar-link">Inactive</a></li>
+                <li><a href="#" class="sidebar-link">Users</a></li>
+              </ul>
+            </li>
+            <li class="sidebar-item">
+              <a href="#" class="sidebar-link">
+                <img src="assets/billing.png" alt="Billing" />
+              </a>
+            </li>
+          </ul>
+        </nav>
+        <div class="sidebar-footer">
+          <a href="#" class="sidebar-link">
+            <img src="assets/logout.png" alt="Sign Out" />
+          </a>
+        </div>
+      </aside>
+      <main class="main-content">
+        <nav class="top-nav">
+          <div class="container-fluid">
+            <div class="row align-items-center">
+              <div class="col">
+                <div class="d-flex">
+                  <div class="dropdown me-2">
+                    <button
+                      class="btn btn-light dropdown-toggle"
+                      type="button"
+                      id="dropdownAll"
+                      data-bs-toggle="dropdown"
+                      aria-expanded="false"
+                    >
+                      All
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownAll">
+                      <li><a class="dropdown-item" href="#">Option 1</a></li>
+                      <li><a class="dropdown-item" href="#">Option 2</a></li>
+                    </ul>
+                  </div>
+                  <div class="dropdown">
+                    <button
+                      class="btn btn-light dropdown-toggle"
+                      type="button"
+                      id="dropdownDepartments"
+                      data-bs-toggle="dropdown"
+                      aria-expanded="false"
+                    >
+                      All Departments
+                    </button>
+                    <ul
+                      class="dropdown-menu"
+                      aria-labelledby="dropdownDepartments"
+                    >
+                      <li>
+                        <a class="dropdown-item" href="#">Department 1</a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#">Department 2</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="col-auto">
+                <button class="btn btn-light">
+                  <img src="assets/icon-user-list.png" alt="User List" />
+                </button>
+              </div>
+            </div>
+          </div>
+        </nav>
+        <div class="content">
+          <div class="search-invite">
+            <div class="search-wrapper">
+              <input
+                type="search"
+                class="form-control"
+                placeholder="Search..."
+                aria-label="Search"
+              />
+            </div>
+            <div class="invite-wrapper">
+              <button type="button" class="btn btn-primary invite-btn">
+                <img src="assets/icon-user.png" alt="Invite" /> Invite
+              </button>
+            </div>
+            <div class="more-options">
+              <button class="btn btn-light">
+                <img src="assets/dots_1.png" alt="More options" />
+              </button>
+            </div>
+          </div>
+          <div class="activity-stats">
+            <div class="stat-item">
+              <h2 class="stat-value">7</h2>
+              <p class="stat-label">Teams</p>
+            </div>
+            <div class="stat-separator"></div>
+            <div class="stat-item">
+              <h2 class="stat-value">7</h2>
+              <p class="stat-label">Online</p>
+            </div>
+            <div class="stat-separator"></div>
+            <div class="stat-item">
+              <h2 class="stat-value">0</h2>
+              <p class="stat-label">Guests</p>
+            </div>
+          </div>
+          <div id="profile-cards" class="profile-cards">
+            <!-- Profile cards will be inserted here by JavaScript -->
+          </div>
+          <div class="save-all-container">
+            <button class="btn btn-primary save-all-button">Save All</button>
+          </div>
+        </div>
+      </main>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
